@@ -1,7 +1,8 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+import rotate_array.Solution
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+fun main(args: Array<String>) {
+    Solution().rotate(
+        intArrayOf(1, 2, 3, 4, 5, 6, 7),
+        5
+    )
 }
