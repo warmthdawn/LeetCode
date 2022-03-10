@@ -1,12 +1,14 @@
 package reverse_string
 
 class Solution {
+
+    private fun CharArray.swap(i: Int, j: Int) {
+        val tmp = this[i]
+        this[i] = this[j]
+        this[j] = tmp
+    }
+
     fun reverseString(s: CharArray): Unit {
-        (0..s.size / 2).forEach {
-            val oppo = s.size - it - 1
-            val tmp = s[it]
-            s[it] = s[oppo]
-            s[oppo] = tmp
-        }
+        (0..s.size / 2).forEach { s.swap(it, s.size - it - 1) }
     }
 }
