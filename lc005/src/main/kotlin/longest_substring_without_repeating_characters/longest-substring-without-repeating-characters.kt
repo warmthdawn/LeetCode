@@ -11,7 +11,6 @@ class Solution {
             val chi = lastIndexes[ch]
             if (chi != null) {
                 bg = max(bg, chi)
-            } else {
             }
             result = max(result, i - bg)
             lastIndexes[ch] = i
